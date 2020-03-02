@@ -70,8 +70,8 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       JwtModule.forRoot({
         config: {
           tokenGetter: tokenGetter,
-          whitelistedDomains: ['localhost:5000', 'https://datingservice.azurewebsites.net'],
-          blacklistedRoutes: ['localhost:5000/api/auth', 'https://datingservice.azurewebsites.net/api/auth']
+          whitelistedDomains: ['localhost:5000', 'datingservice.azurewebsites.net'],
+          blacklistedRoutes: ['localhost:5000/api/auth', 'datingservice.azurewebsites.net/api/auth']
         }
       })
    ],
