@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'datingservice.azurewebsites.net/api/',
-  url: 'datingservice.azurewebsites.net'
+  apiUrl: 'https://datingservice.azurewebsites.net/api/',
+  url: 'https://datingservice.azurewebsites.net'
 };
