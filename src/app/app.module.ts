@@ -30,6 +30,7 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { MemberEditResolver } from './_resolver/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { environment } from 'src/environments/environment';
 
 
 export function tokenGetter() {
@@ -70,8 +71,8 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       JwtModule.forRoot({
         config: {
           tokenGetter: tokenGetter,
-          whitelistedDomains: ['localhost:5000'],
-          blacklistedRoutes: ['localhost:5000/api/auth']
+          whitelistedDomains: [environment.url],
+          blacklistedRoutes: [environment.apiUrl + 'auth']
         }
       })
    ],
